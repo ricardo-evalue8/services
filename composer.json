@@ -3,7 +3,7 @@
     "description": "This extension is a widget that will show services on your website.",
     "type": "bolt-extension",
     "keywords": ["widget", "services", "social"],
-	"version": "1.0.0",
+	"version": "1.0.1",
     "require": {
         "bolt/bolt": "^3.0"
     },
