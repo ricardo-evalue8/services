@@ -15,6 +15,8 @@ use Silex\ControllerCollection;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
+use Bolt\Asset\Widget\Widget;
+
 /**
  * An extremely basic (thus far) login wallpaper extension.
  *
@@ -24,53 +26,22 @@ use Symfony\Component\HttpFoundation\Response;
  */
 class servicesExtension extends SimpleExtension
 {
-	protected function registerMenuEntries()
-	{
-		$menu = MenuEntry::create('services-menu', 'theme')
-			->setLabel('Social services')
-			->setIcon('fa:paint-brush')
-			->setPermission('settings')
-			->setRoute('select-theme')
-		;
-		
-		$submenuItemOne = MenuEntry::create('theme-submenu-one', '../../theme-picker')
-			->setLabel('Select theme')
-			->setIcon('fa:paint-brush')
-		;
-
-		$submenuItemTwo = MenuEntry::create('theme-submenu-two', '../../theme-upload')
-			->setLabel('Upload theme')
-			->setIcon('fa:upload')
-		;
-
-		$menu->add($submenuItemOne);
-		$menu->add($submenuItemTwo);
-
-		return [
-			$menu,
-		];
-	}
-
-    protected function registerBackendRoutes(ControllerCollection $collection)
-    {
-        // GET requests on the /bolt/theme-picker route
-        $collection->get('/services', [$this, 'callbackBoltPicker']);
-
-        // POST requests on the /bolt/theme-picker route
-        $collection->post('/services', [$this, 'callbackBoltPicker']);
-    }
-
-
-    public function callbackBoltPicker(Application $app, Request $request)
-    {
-        return $this->renderTemplate('services.twig');
-    }
-	
 	protected function registerAssets()
     {
-        // Add some web assets from the web/ directory
-        return [
-            new Stylesheet('services.css'),
-        ];
+
+		$widget = new \Bolt\Asset\Widget\Widget();
+        $widget
+            ->setZone('frontend')
+            ->setLocation('main')
+            ->setCallback([$this, 'frontendButton'])
+        ;
+		
+        return [ $widget ];
+    }
+	
+	public function frontendButton()
+    {
+
+        return $this->renderTemplate('services.twig');
     }
 }
