@@ -1,8 +1,9 @@
 {
     "name": "evalue8/services",
-    "description": "This extension will callow you to hange theme by clicking the buttons.",
+    "description": "This extension is a widget that will show services on your website.",
     "type": "bolt-extension",
-    "keywords": ["login", "admin", "theme", "background", "image"],
+    "keywords": ["widget", "services", "social"],
+	"version": "1.0.0",
     "require": {
         "bolt/bolt": "^3.0"
     },
@@ -17,7 +18,7 @@
 			"homepage": "http://evalue8.nl"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "prefer-stable": true,
     "autoload": {
         "psr-4": {
