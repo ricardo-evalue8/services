@@ -17,6 +17,7 @@
 			"homepage": "http://evalue8.nl"
         }
     ],
+	"version": "1.0.5",
     "minimum-stability": "dev",
     "prefer-stable": true,
     "autoload": {
