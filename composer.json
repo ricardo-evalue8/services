@@ -3,6 +3,7 @@
     "description": "This extension is a widget that will show services on your website.",
     "type": "bolt-extension",
     "keywords": ["widget", "services", "social"],
+	"version": "1.0.6",
     "require": {
         "bolt/bolt": "^3.0"
     },
@@ -17,7 +18,6 @@
 			"homepage": "http://evalue8.nl"
         }
     ],
-	"version": "1.0.5",
     "minimum-stability": "stable",
     "prefer-stable": true,
     "autoload": {
