@@ -1,6 +1,6 @@
 # services
 Show services on your website
-![Bolt screenshot](https://github.com/ricardo-evalue8/)
+![Bolt screenshot](https://github.com/ricardo-evalue8/services/blob/master/assets/screenshot1.png)
 
 Extension version
 ```
