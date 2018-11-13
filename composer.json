@@ -4,6 +4,7 @@
     "type": "bolt-extension",
     "keywords": ["widget", "services", "social"],
 	"version": "1.0.0",
+	"minimum-stability": "dev",
     "require": {
         "bolt/bolt": "^3.0"
     },
