@@ -1,0 +1,41 @@
+{
+    "name": "evalue8/services",
+    "description": "This extension will callow you to hange theme by clicking the buttons.",
+    "type": "bolt-extension",
+    "keywords": ["login", "admin", "theme", "background", "image"],
+    "require": {
+        "bolt/bolt": "^3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^4.7"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ricardo van de Rakt",
+            "email": "ricardo@evalue8.nl",
+			"homepage": "http://evalue8.nl"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Bolt\\Extension\\evalue8\\services\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Bolt\\Extension\\evalue8\\services\\Tests\\": "tests",
+            "Bolt\\Tests\\": "vendor/bolt/bolt/tests/phpunit/unit/"
+        }
+    },
+    "extra": {
+		"bolt-icon": "services.png",
+        "bolt-assets": "web",
+        "bolt-class": "Bolt\\Extension\\evalue8\\services\\servicesExtension",
+		"bolt-screenshots": [
+            "/assets/screenshot1.png"
+        ]
+	}
+}
