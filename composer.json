@@ -2,8 +2,8 @@
     "name": "evalue8/services",
     "description": "This extension is a widget that will show services on your website.",
     "type": "bolt-extension",
+	"version": "1.0.0",
     "keywords": ["widget", "services", "social"],
-	"version": "1.0.6",
     "require": {
         "bolt/bolt": "^3.0"
     },
@@ -18,7 +18,7 @@
 			"homepage": "http://evalue8.nl"
         }
     ],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true,
     "autoload": {
         "psr-4": {
