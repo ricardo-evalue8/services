@@ -1,6 +1,6 @@
-# services
-Show services on your website
-![Bolt screenshot](https://github.com/ricardo-evalue8/services/blob/master/assets/screenshot1.png)
+# reviews
+Show reviews on your website
+![Bolt screenshot](https://github.com/ricardo-evalue8/reviews/blob/master/assets/screenshot1.png)
 
 Extension version
 ```
@@ -10,7 +10,7 @@ v1.0.0 - alpha
 ## Setup
 
 1. Install extension.
-1. Visit `/bolt/services`. And add new services.
+1. Visit `/bolt/reviews`. And add new reviews.
 
 
 ## Changelog
@@ -18,6 +18,6 @@ v1.0.0 - alpha
 * alpha v1.0.0 - Does not work yet
 
 ## TODO
-* Add new services
-* Edit new services
-* Delete new services
+* Add new reviews
+* Edit new reviews
+* Delete new reviews
